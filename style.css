@@ -24,7 +24,9 @@ main{
     max-width: 350px;
     border: 1px solid var(--black);
     border-radius: 1rem;
-    box-shadow: 5px 5px 0 0 var(--black);
+    /*box-shadow: 5px 5px 0 0 var(--black);*/
+    position: relative;
+    /*z-index: 0;*/
 }
 
 main:has(h2:hover){
@@ -51,6 +53,22 @@ main>img{
 h2:hover{
     color: var(--yellow);
     cursor: pointer;
+}
+
+h2::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    border-radius: 1rem;
+    box-shadow: 6px 6px 0 0 var(--black);
+    width: 100%;
+}
+
+h2:hover::before{
+    box-shadow: 10px 10px 0 0 var(--black);
+    left:1px;
+    top: 1px;
 }
 
 .profile-pic{
