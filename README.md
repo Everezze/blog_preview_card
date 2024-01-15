@@ -23,7 +23,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://everezze.github.io/blog_preview_card/](https://everezze.github.io/blog_preview_card/)
 
 ## My process
 
